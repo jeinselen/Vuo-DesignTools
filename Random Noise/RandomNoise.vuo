@@ -1,0 +1,149 @@
+/**
+ * @file
+ * @brief Random Noise
+ *
+ * @author [iaian7](https://vuo.org/user/127)
+ * @version 1.0
+ * @createdInVuoVersion 2.4.5
+ * @lastSavedInVuoVersion 2.4.5
+ * @copyright Copyright © 2024 [iaian7](https://vuo.org/user/127)
+ * @image icon RandomNoise.png
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+Add [type="vuo.math.add.VuoReal" version="2.1.1" label="Add|<refresh>refresh\l|<values>values\l|<sum>sum\r" pos="420,195"];
+Add2 [type="vuo.math.add.VuoReal" version="2.1.1" label="Add|<refresh>refresh\l|<values>values\l|<sum>sum\r" pos="420,315"];
+AppendTexts [type="vuo.text.append" version="1.2.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<compositeText>compositeText\r" pos="1065,360" _separator="\"\\n\"" _includeEmptyParts="true"];
+AppendTexts3 [type="vuo.text.append" version="1.2.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<compositeText>compositeText\r" pos="1065,210" _separator="\"\\n\"" _includeEmptyParts="true"];
+AppendTexts5 [type="vuo.text.append" version="1.2.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<compositeText>compositeText\r" pos="750,435" fillcolor="tangerine" _separator="\"\"" _includeEmptyParts="true"];
+ArrangeLayersInRow [type="vuo.layer.arrange.row" version="1.0.0" label="Arrange Layers in Row|<refresh>refresh\l|<layers>layers\l|<renderedLayers>renderedLayers\l|<verticalAlignment>verticalAlignment\l|<anchor>anchor\l|<position>position\l|<spacing>spacing\l|<arrangedLayer>arrangedLayer\r" pos="1560,390" _verticalAlignment="\"center\"" _anchor="\"center-center\"" _position="\{\"x\":0,\"y\":0\}" _spacing="0.20000000000000001"];
+ChangeSamplingMode [type="vuo.image.samplingMode" version="1.0.0" label="Change Sampling Mode|<refresh>refresh\l|<image>image\l|<samplingMode>samplingMode\l|<outputImage>outputImage\r" pos="1155,45" fillcolor="yellow" _samplingMode="0"];
+CombineImageRGBChannels [type="vuo.image.color.combine.rgb" version="1.1.0" label="Combine Image RGB Channels|<refresh>refresh\l|<redImage>redImage\l|<greenImage>greenImage\l|<blueImage>blueImage\l|<opacityImage>opacityImage\l|<combinedImage>combinedImage\r" pos="855,45"];
+CombineLayers2 [type="vuo.layer.combine.group" version="1.0.0" label="Combine Layers|<refresh>refresh\l|<layers>layers\l|<combinedLayer>combinedLayer\r" pos="1785,210"];
+ConvertImageToLayer [type="vuo.type.image.layer" version="1.0.0" label="Convert Image to Layer|<refresh>refresh\l|<image>image\l|<layer>layer\r" pos="2220,135"];
+Count [type="vuo.math.count.VuoReal" version="1.0.1" label="Count|<refresh>refresh\l|<increment>increment\l|<decrement>decrement\l|<setCount>setCount\l|<count>count\r" pos="240,165" _increment="1.0" _decrement="1.0" _setCount="4.0"];
+CountWithinRange3 [type="vuo.math.countWithinRange.VuoInteger" version="1.0.2" label="Count within Range|<refresh>refresh\l|<increment>increment\l|<decrement>decrement\l|<setCount>setCount\l|<minimum>minimum\l|<maximum>maximum\l|<wrapMode>wrapMode\l|<count>count\r" pos="270,525" _increment="1" _decrement="1" _setCount="4" _minimum="1" _maximum="8" _wrapMode="\"saturate\""];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="30,45" _started_eventThrottling="enqueue"];
+LockWindowAspectRatio [type="vuo.window.aspectRatio2" version="2.0.0" label="Lock Window Aspect Ratio|<refresh>refresh\l|<windowDescription>windowDescription\l|<width>width\l|<height>height\l|<changedWindowDescription>changedWindowDescription\r" pos="2160,120" fillcolor="blue" _width="1.0" _height="1.0"];
+MakeFont [type="vuo.font.make" version="1.0.0" label="Make Font|<refresh>refresh\l|<fontName>fontName\l|<pointSize>pointSize\l|<underlined>underlined\l|<color>color\l|<horizontalAlignment>horizontalAlignment\l|<characterSpacing>characterSpacing\l|<lineSpacing>lineSpacing\l|<font>font\r" pos="1050,615" _fontName="\"Avenir-Medium\"" _pointSize="24.0" _underlined="false" _color="\{\"r\":1,\"g\":1,\"b\":1,\"a\":1\}" _horizontalAlignment="\"center\"" _characterSpacing="1." _lineSpacing="1."];
+MakeList [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="387,206" _2="73.0" _2_manuallyFirable="yes"];
+MakeList11 [type="vuo.list.make.5.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<list>list\r" pos="691,446" fillcolor="tangerine" _1="\"~\\/Desktop\\/RandomNoise-\"" _3="\"-\"" _5="\".png\""];
+MakeList2 [type="vuo.list.make.2.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="2121,41" fillcolor="blue"];
+MakeList3 [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="387,326" _2="179.0"];
+MakeList4 [type="vuo.list.make.3.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<list>list\r" pos="1492,401"];
+MakeList6 [type="vuo.list.make.2.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="1752,221"];
+MakeList7 [type="vuo.list.make.2.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="1006,371" _1="\"- resolution +\""];
+MakeList9 [type="vuo.list.make.2.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="1006,221" _1="\"← random →\""];
+MakeRandomImage [type="vuo.image.make.random" version="1.0.0" label="Make Random Image|<refresh>refresh\l|<colorA>colorA\l|<colorB>colorB\l|<seed>seed\l|<width>width\l|<height>height\l|<image>image\r" pos="615,45" _colorA="\{\"r\":0,\"g\":0,\"b\":0,\"a\":1\}" _colorB="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}"];
+MakeRandomImage2 [type="vuo.image.make.random" version="1.0.0" label="Make Random Image|<refresh>refresh\l|<colorA>colorA\l|<colorB>colorB\l|<seed>seed\l|<width>width\l|<height>height\l|<image>image\r" pos="615,165" _colorA="\{\"r\":0,\"g\":0,\"b\":0,\"a\":1\}" _colorB="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}"];
+MakeRandomImage3 [type="vuo.image.make.random" version="1.0.0" label="Make Random Image|<refresh>refresh\l|<colorA>colorA\l|<colorB>colorB\l|<seed>seed\l|<width>width\l|<height>height\l|<image>image\r" pos="615,285" _colorA="\{\"r\":0,\"g\":0,\"b\":0,\"a\":1\}" _colorB="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}"];
+MakeRectangleLayer [type="vuo.layer.make.rect" version="1.0.0" label="Make Rectangle Layer|<refresh>refresh\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<roundness>roundness\l|<opacity>opacity\l|<layer>layer\r" pos="1560,210" _color="\{\"r\":0.12338445335626602,\"g\":0.12254520505666733,\"b\":0.14741741120815277,\"a\":1.0\}" _anchor="\"center-center\"" _center="\{\"x\":0.0,\"y\":0.0\}" _rotation="0.0" _width="2.0" _height="0.20000000000000001" _sharpness="1.0" _roundness="0.0" _opacity="0.75"];
+MakeTextLayer [type="vuo.layer.make.text2" version="2.0.0" label="Make Text Layer|<refresh>refresh\l|<text>text\l|<font>font\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<wrapWidth>wrapWidth\l|<opacity>opacity\l|<layer>layer\r" pos="1305,360" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _wrapWidth="0.5" _opacity="1.0"];
+MakeTextLayer4 [type="vuo.layer.make.text2" version="2.0.0" label="Make Text Layer|<refresh>refresh\l|<text>text\l|<font>font\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<wrapWidth>wrapWidth\l|<opacity>opacity\l|<layer>layer\r" pos="1305,210" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _wrapWidth="0.5" _opacity="1.0"];
+MakeTextLayer5 [type="vuo.layer.make.text2" version="2.0.0" label="Make Text Layer|<refresh>refresh\l|<text>text\l|<font>font\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<wrapWidth>wrapWidth\l|<opacity>opacity\l|<layer>layer\r" pos="1305,510" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _wrapWidth="0.5" _opacity="1.0"];
+ReceiveKeyboardButtons3 [type="vuo.keyboard.button2" version="2.0.0" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-30,105" fillcolor="magenta" _key="\"RightArrow\"" _modifierKey="\"any\"" _repeatWhenHeld="true" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+ReceiveKeyboardButtons4 [type="vuo.keyboard.button2" version="2.0.0" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-30,210" fillcolor="magenta" _key="\"LeftArrow\"" _modifierKey="\"any\"" _repeatWhenHeld="true" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+ReceiveKeyboardButtons5 [type="vuo.keyboard.button2" version="2.0.0" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-30,630" fillcolor="magenta" _key="\"Minus\"" _modifierKey="\"any\"" _repeatWhenHeld="false" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+ReceiveKeyboardButtons6 [type="vuo.keyboard.button2" version="2.0.0" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-30,525" fillcolor="magenta" _key="\"Equal\"" _modifierKey="\"any\"" _repeatWhenHeld="false" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+ReceiveKeyboardButtons9 [type="vuo.keyboard.button2" version="2.0.0" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-30,900" fillcolor="magenta" _key="\"S\"" _modifierKey="\"any\"" _repeatWhenHeld="false" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+RenderLayersToWindow [type="vuo.layer.render.window2" version="3.0.0" label="Render Layers to Window|<refresh>refresh\l|<layers>layers\l|<multisampling>multisampling\l|<setWindowDescription>setWindowDescription\l|<updatedWindow>updatedWindow\r" pos="2175,30" fillcolor="blue" _multisampling="\"off\"" _updatedWindow_eventThrottling="enqueue"];
+Round [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="660,420"];
+Round2 [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="660,180"];
+Round3 [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="660,300"];
+SaveImage [type="vuo.image.save2" version="2.0.0" label="Save Image|<refresh>refresh\l|<url>url\l|<saveImage>saveImage\l|<ifExists>ifExists\l|<format>format\l|<done>done\r" pos="780,570" fillcolor="tangerine" _ifExists="1" _format="\"PNG\""];
+SelectInput [type="vuo.select.in.8.VuoInteger" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="465,525" _option1="16" _option2="32" _option3="64" _option4="128" _option5="256" _option6="512" _option7="1024" _option8="2048"];
+SelectInput2 [type="vuo.select.in.boolean.VuoImage" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="465,735"];
+SelectInput4 [type="vuo.select.in.boolean.VuoText" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="1065,510" _falseOption="\"\\\"s\\\" to save\"" _trueOption="\"saving...\""];
+ShareValue [type="vuo.data.share.VuoRenderedLayers" version="1.0.0" label="Window|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="-210,105" fillcolor="blue"];
+ShareValue2 [type="vuo.data.share.VuoImage" version="1.0.0" label="Image|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="330,825" fillcolor="yellow"];
+SummarizeValue2 [type="vuo.data.summarize.VuoReal" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="1830,690"];
+SummarizeValue3 [type="vuo.data.summarize.VuoInteger" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="1830,720"];
+SummarizeValue4 [type="vuo.data.summarize.VuoReal" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="1035,630"];
+SummarizeValue6 [type="vuo.data.summarize.VuoInteger" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="1035,330"];
+Switch [type="vuo.logic.switch" version="1.0.0" label="Switch|<refresh>refresh\l|<toggle>toggle\l|<turnOn>turnOn\l|<turnOff>turnOff\l|<value>value\r" pos="330,735"];
+Switch2 [type="vuo.logic.switch" version="1.0.0" label="Switch|<refresh>refresh\l|<toggle>toggle\l|<turnOn>turnOn\l|<turnOff>turnOff\l|<value>value\r" pos="900,510"];
+TransformLayer2 [type="vuo.layer.transform.trs" version="1.0.0" label="Transform Layer|<refresh>refresh\l|<layer>layer\l|<translation>translation\l|<rotation>rotation\l|<scale>scale\l|<transformedLayer>transformedLayer\r" pos="1965,210" _translation="\{\"x\":0.0,\"y\":-0.89999997615814209\}" _rotation="0.0" _scale="\{\"x\":1.0,\"y\":1.0\}"];
+
+Add2:sum -> Round:real;
+Add:sum -> Round3:real;
+AppendTexts3:compositeText -> MakeTextLayer4:text;
+AppendTexts5:compositeText -> SaveImage:url;
+AppendTexts:compositeText -> MakeTextLayer:text;
+ArrangeLayersInRow:arrangedLayer -> MakeList6:2;
+ChangeSamplingMode:outputImage -> ConvertImageToLayer:image;
+ChangeSamplingMode:outputImage -> ShareValue2:value [style=invis];
+CombineImageRGBChannels:combinedImage -> ChangeSamplingMode:image;
+CombineLayers2:combinedLayer -> TransformLayer2:layer;
+ConvertImageToLayer:layer -> MakeList2:1;
+Count:count -> MakeList3:1;
+Count:count -> MakeList:1;
+Count:count -> Round2:real;
+Count:count -> SummarizeValue2:value;
+Count:count -> SummarizeValue4:value;
+CountWithinRange3:count -> SelectInput:which;
+FireOnStart:started -> Count:setCount;
+FireOnStart:started -> CountWithinRange3:setCount;
+FireOnStart:started -> LockWindowAspectRatio:windowDescription;
+FireOnStart:started -> MakeFont:fontName;
+FireOnStart:started -> MakeRandomImage2:colorA;
+FireOnStart:started -> MakeRandomImage:colorA;
+FireOnStart:started -> MakeRectangleLayer:color;
+FireOnStart:started -> Switch2:turnOff;
+FireOnStart:started -> Switch:turnOff;
+LockWindowAspectRatio:changedWindowDescription -> RenderLayersToWindow:setWindowDescription;
+MakeFont:font -> MakeTextLayer4:font;
+MakeFont:font -> MakeTextLayer5:font;
+MakeFont:font -> MakeTextLayer:font;
+MakeList11:list -> AppendTexts5:texts;
+MakeList2:list -> RenderLayersToWindow:layers;
+MakeList3:list -> Add2:values;
+MakeList4:list -> ArrangeLayersInRow:layers;
+MakeList6:list -> CombineLayers2:layers;
+MakeList7:list -> AppendTexts:texts;
+MakeList9:list -> AppendTexts3:texts;
+MakeList:list -> Add:values;
+MakeRandomImage2:image -> CombineImageRGBChannels:greenImage;
+MakeRandomImage3:image -> CombineImageRGBChannels:blueImage;
+MakeRandomImage:image -> CombineImageRGBChannels:redImage;
+MakeRectangleLayer:layer -> MakeList6:1;
+MakeTextLayer4:layer -> MakeList4:1;
+MakeTextLayer5:layer -> MakeList4:3;
+MakeTextLayer:layer -> MakeList4:2;
+ReceiveKeyboardButtons3:pressed -> Count:increment;
+ReceiveKeyboardButtons4:pressed -> Count:decrement;
+ReceiveKeyboardButtons5:pressed -> CountWithinRange3:decrement;
+ReceiveKeyboardButtons6:pressed -> CountWithinRange3:increment;
+ReceiveKeyboardButtons9:pressed -> Switch2:turnOn;
+ReceiveKeyboardButtons9:pressed -> Switch:turnOn;
+ReceiveKeyboardButtons9:released -> Switch:turnOff;
+RenderLayersToWindow:updatedWindow -> ShareValue:value [style=invis];
+Round2:rounded -> MakeRandomImage:seed;
+Round3:rounded -> MakeRandomImage2:seed;
+Round:rounded -> MakeRandomImage3:seed;
+SaveImage:done -> Switch2:turnOff;
+SelectInput2:out -> SaveImage:saveImage;
+SelectInput4:out -> MakeTextLayer5:text;
+SelectInput:out -> MakeRandomImage2:height;
+SelectInput:out -> MakeRandomImage2:width;
+SelectInput:out -> MakeRandomImage3:height;
+SelectInput:out -> MakeRandomImage3:width;
+SelectInput:out -> MakeRandomImage:height;
+SelectInput:out -> MakeRandomImage:width;
+SelectInput:out -> SummarizeValue3:value;
+SelectInput:out -> SummarizeValue6:value;
+ShareValue2:sameValue -> SelectInput2:trueOption;
+ShareValue:sameValue -> ReceiveKeyboardButtons3:window;
+ShareValue:sameValue -> ReceiveKeyboardButtons4:window;
+ShareValue:sameValue -> ReceiveKeyboardButtons5:window;
+ShareValue:sameValue -> ReceiveKeyboardButtons6:window;
+ShareValue:sameValue -> ReceiveKeyboardButtons9:window;
+SummarizeValue2:summary -> MakeList11:2;
+SummarizeValue3:summary -> MakeList11:4;
+SummarizeValue4:summary -> MakeList9:2;
+SummarizeValue6:summary -> MakeList7:2;
+Switch2:value -> SelectInput4:which;
+Switch:value -> SelectInput2:which;
+TransformLayer2:transformedLayer -> MakeList2:2;
+}
